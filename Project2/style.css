@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
+:root{
+    --blue-color:#3498db;
+}
+
+
 *{
     box-sizing: border-box;
 }
@@ -27,7 +32,7 @@ body{
 }
 .container-progreess::before{
     content: '';
-    background-color: #c2c7ca;
+    background-color: #999;
     position: absolute;
     height: 4px;
     width:100%;
@@ -41,10 +46,52 @@ body{
     background-color: #3498db;
     position: absolute;
     height: 4px;
-    width:50%;
+    width:0%;
     top:50%;
     left: 0;
     z-index:-1;
     transform: translateY(-50%);
     transform: .4s ease;
+}
+
+.circle{
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color :#999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease;
+    border: 3px solid #999;
+
+
+}
+
+.circle.active{
+    border-color:#3498db;
+}
+.btn{
+    font-family: 'Muli';
+    background-color: var(--blue-color);
+    color:#fff;
+    padding :8px 30px;
+    font-size: medium;
+    cursor: pointer;
+    border:0;
+    border-radius: 6px;
+    margin:5px;
+
+}
+.btn:active{
+    transform: scale(.87);
+}
+.btn:focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color:#999;
+    cursor:not-allowed;
 }
