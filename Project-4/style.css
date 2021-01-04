@@ -52,13 +52,4 @@ body {
     transform: translateX(198px);
     background-color: #39b385;
 }
-.detail {
-    display: none;
-}
 
-/* .detail .active h3{
-    color : white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular';
-    margin-top: 10px;
-
-} */

@@ -6,6 +6,6 @@ const detail = document.querySelector('.detail')
 btn.addEventListener("click", function () {
     search.classList.toggle("active");
     input.focus()
-    detail.style.display = 
-    // detail.classList.toggle('active')
+    // detail.style.display = block;
+    detail.classList.toggle('active')
 });
