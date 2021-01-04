@@ -1,6 +1,6 @@
 
-const open  = document.getElementById('open')
-const close  = document.getElementById('close')
+const open  = document.getElementsByClassName('open')
+const close  = document.getElementsByClassName('close')
 const container = document.querySelector('.container')
 
 open.addEventListner('click', ()=> container.classList.add('rotate-cont'))
