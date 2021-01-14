@@ -1,0 +1,43 @@
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(37, 144, 163, 0.295);
+
+}
+h1{
+    margin: 18px;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(37, 144, 163);
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.3s ease-in;
+}
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box.show{
+    transform: translateX(0px);
+}
+
+.box h2{
+    font-size: xx-large;
+}
