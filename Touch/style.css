@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(209, 203, 203);
+}
+
+.box{
+  height: 50px;
+  min-width: 150px;
+  background-color: white;
+  margin: 0 20px ;
+  padding : 20px;
+  border:1px solid grey;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px rgba(0,0,0,0.1);
+  font-weight: bolder;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box small {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color:rgba(128, 128, 128, 0.76);
+}
